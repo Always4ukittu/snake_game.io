@@ -147,3 +147,21 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+// Listining keys for mobile version
+document.getElementById("up").addEventListener("click", () => {
+  inputDir.x = 0;
+  inputDir.y = -1;
+});
+document.getElementById("down").addEventListener("click", () => {
+  inputDir.x = 0;
+  inputDir.y = 1;
+});
+document.getElementById("left").addEventListener("click", () => {
+  inputDir.x = -1;
+  inputDir.y = 0;
+});
+document.getElementById("right").addEventListener("click", () => {
+  inputDir.x = 1;
+  inputDir.y = 0;
+});
